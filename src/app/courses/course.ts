@@ -1,6 +1,7 @@
 export class Course {
   id: number;
   name: string;
+  description: string;
   imageUrl: string;
   price: number;
   code: string;
@@ -11,6 +12,7 @@ export class Course {
   constructor(
     id: number,
     name: string,
+    description: string,
     imageUrl: string,
     price: number,
     code: string,
@@ -20,6 +22,7 @@ export class Course {
   ) {
     this.id = id;
     this.name = name;
+    this.description = description;
     this.imageUrl = imageUrl;
     this.price = price;
     this.code = code;
