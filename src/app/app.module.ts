@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { CourseInfoComponent } from './courses/course-info.component';
 import { CourseListComponent } from './courses/course-list.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PageNotFound } from './page-not-found/page-not-found.component';
@@ -14,25 +15,36 @@ import { StarComponent } from './star/star.component';
   declarations: [
     AppComponent,
     CourseListComponent,
+    CourseInfoComponent,
     StarComponent,
     ReplacePipe,
     NavBarComponent,
-    PageNotFound],
+    PageNotFound
+  ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
       {
-        path: '', redirectTo: 'courses',pathMatch: 'full'
+        path: 'courses',
+        component: CourseListComponent
       },
       {
-        path: 'courses', component: CourseListComponent
+        path: 'courses/info/:id',
+        component: CourseInfoComponent
       },
       {
-        path: '**', component: PageNotFound
+        path: '',
+        redirectTo: 'courses',
+        pathMatch: 'full'
+      },
+      {
+        path: '**',
+        component: PageNotFound
       }
-    ])],
+    ])
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
