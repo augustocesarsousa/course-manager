@@ -4,16 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 import { CourseModule } from './courses/course.module';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PageNotFound } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, PageNotFound],
+  declarations: [AppComponent, PageNotFound],
   imports: [
     BrowserModule,
     CourseModule,
     HttpClientModule,
+    CoreModule,
     RouterModule.forRoot([
       {
         path: '',
