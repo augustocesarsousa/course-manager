@@ -6,10 +6,9 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { CourseModule } from './courses/course.module';
-import { PageNotFound } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFound],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     CourseModule,
@@ -20,10 +19,6 @@ import { PageNotFound } from './page-not-found/page-not-found.component';
         path: '',
         redirectTo: 'courses',
         pathMatch: 'full'
-      },
-      {
-        path: '**',
-        component: PageNotFound
       }
     ])
   ],

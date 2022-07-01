@@ -1,27 +1,54 @@
-# CourseManager
+# **Course Manager**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+Este projeto foi desenvolvido no Bootcamp Santander Fullstack Developer pela <a href="https://web.dio.me/home" target="_blank">DIO</a> no módulo Angular, nele foi aplicado os principais recursos utilizados pelo framework junto com as tecnologias mais atuais.
 
-## Development server
+## Tecnologias utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- HTML5
+- CSS3
+- Typescript
+- Angular
+- Visual Studio Code
 
-## Code scaffolding
+## Recursos aplicados
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Componentes
+- Data binding
+- Formulários
+- Injeção de dependência
+- Requisições HTTP
+- Rotas
+- Templates
 
-## Build
+## Rodando o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Requisitos
+  - Node v12.x ou superior
+  - Angular CLI
 
-## Running unit tests
+### Server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Baixe o projeto e extraia-o na sua máquina
+- Abra um terminal dentro da pasta server e rode os seguintes comandos
+  - Instalar as dependências necessárias
+    `npm i`
+  - Iniciar o servidor
+    `node server.js`
 
-## Running end-to-end tests
+### Página
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Abra outro terminal na pasta raiz do projeto e rode os seguintes comandos
+  - Instalar as dependências necessárias
+    `npm i`
+  - Iniciar o Angular
+    `ng serve -o`
 
-## Further help
+## Imagens do projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Página listagem
+
+![List page](/src/assets/images/page-1.png)
+
+2. Página formulário
+
+![Form page](/src/assets/images/page-2.png)
